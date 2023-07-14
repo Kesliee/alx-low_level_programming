@@ -5,7 +5,7 @@
 /**
 * main - Determines if a number is positive, negative or zero.
 *
-* Return: Always 0 (Success)
+* Return: 0 on Success
 */
 int main(void)
 {
@@ -15,15 +15,15 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
-        printf("%d is postive\n", n);
+printf("%d is %s\n", n, "positive");
 }
 else if (n == 0)
 {
-        printf("%d is zero\n", n);
+printf("%d is %s\n", n, "zero");
 }
 else
 {
-        printf("%d is negative\n", n);
+printf("%d is %s\n", n, "negative");
 }
 return (0);
 }
